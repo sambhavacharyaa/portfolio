@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Home{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="heading">
+
+        <h1>Hi!</h1>
+    </div>
+    <div class="para">
+
+        <p>I'm Sambhav Acharya. I am a secondary school student, a <a href="https://www.linkedin.com/in/sambhav-acharya-8183a134a/">Cloud/DevOps specialist</a> and a web developer. I'm currently working as a Server Manager at a company. </p>
+    </div>
+    <div class="links">
+        <a href="https://www.linkedin.com/in/sambhav-acharya-8183a134a/">LinkedIn</a> / 
+        <a href="https://github.com/sambhavacharyaa">GitHub</a>
+    </div>
+    <p class="para para2">
+        I'm particularly interested in Cloud Computing and DevOps, web development and I'm currently learning Django.
+    </p>
+</div>
+{% endblock %}

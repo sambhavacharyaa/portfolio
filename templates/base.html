@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% block css %}{% endblock %}
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"> <a href="{% url "home" %}">
+                Sambhav
+            </a> <span class="acharya">Acharya</span></div>
+            <div class="right"><a href="https://posts.sambhavacharya.xyz">Posts</a></div>
+        </nav>
+    </header>
+    {% block content %}{% endblock %}
+</body>
+</html>
